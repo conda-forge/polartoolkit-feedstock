@@ -38,6 +38,7 @@ requirements:
     - zarr
     - python-dotenv
     - nptyping
+    - requests
 
 test:
   imports:
