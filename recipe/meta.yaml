@@ -12,8 +12,14 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
-
+  number: 1 #RETURN THIS TO 0 ON NEXT RELEASE!!!
+###
+###
+###
+# RESET BUILD NUMBER
+###
+###
+###
 requirements:
   host:
     - python >=3.9
@@ -33,7 +39,7 @@ requirements:
     - rioxarray
     - scipy
     - numpy
-    - pygmt
+    - pygmt >=0.10.0
     - geopandas
     - zarr
     - python-dotenv
