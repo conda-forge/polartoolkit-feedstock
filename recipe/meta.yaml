@@ -1,5 +1,5 @@
 {% set name = "polartoolkit" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/polartoolkit-{{ version }}.tar.gz
-  sha256: 4dfbff5fe41ef9fc64009a1d55b9fb9d6363f4e9cd5ca479689e4d2dfbbd416e
+  sha256: 22f1d450bc2698f0d55cb308a8bc3f535bf54c1e10823c5e392f2e53f0f9c9a3
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1 #RETURN THIS TO 0 ON NEXT RELEASE!!!
+  number: 0
 ###
 ###
 ###
@@ -51,11 +51,11 @@ test:
     - polartoolkit
 
 about:
-  home: https://antarctic-plots.readthedocs.io
+  home: https://polartoolkit.readthedocs.io
   summary: Helpful tools for polar researchers
   license: MIT
   license_file: LICENSE
-  doc_url: https://antarctic-plots.readthedocs.io/
+  doc_url: https://polartoolkit.readthedocs.io/
   dev_url: https://github.com/mdtanker/polartoolkit
 
 extra:
