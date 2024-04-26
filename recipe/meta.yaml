@@ -51,11 +51,11 @@ test:
     - polartoolkit
 
 about:
-  home: https://antarctic-plots.readthedocs.io
+  home: https://polartoolkit.readthedocs.io
   summary: Helpful tools for polar researchers
   license: MIT
   license_file: LICENSE
-  doc_url: https://antarctic-plots.readthedocs.io/
+  doc_url: https://polartoolkit.readthedocs.io/
   dev_url: https://github.com/mdtanker/polartoolkit
 
 extra:
