@@ -3,7 +3,7 @@ About polartoolkit-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/polartoolkit-feedstock/blob/main/LICENSE.txt)
 
-Home: https://antarctic-plots.readthedocs.io
+Home: https://polartoolkit.readthedocs.io
 
 Package license: MIT
 
@@ -11,7 +11,7 @@ Summary: Helpful tools for polar researchers
 
 Development: https://github.com/mdtanker/polartoolkit
 
-Documentation: https://antarctic-plots.readthedocs.io/
+Documentation: https://polartoolkit.readthedocs.io/
 
 Current build status
 ====================
