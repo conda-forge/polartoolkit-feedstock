@@ -30,6 +30,7 @@ requirements:
     - pandas
     - openpyxl
     - pooch
+    - tqdm
     - verde >=1.8.0
     - xarray
     - harmonica >=0.6.0
@@ -45,6 +46,7 @@ requirements:
     - python-dotenv
     - nptyping
     - requests
+    - deprecation
 
 test:
   imports:
