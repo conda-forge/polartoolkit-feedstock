@@ -1,5 +1,5 @@
 {% set name = "polartoolkit" %}
-{% set version = "0.3.3" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/polartoolkit-{{ version }}.tar.gz
-  sha256: 22f1d450bc2698f0d55cb308a8bc3f535bf54c1e10823c5e392f2e53f0f9c9a3
+  sha256: 7e8222b6f449fd1406acb793d0d8f706c23b1b9d58b9d8980d05c2f25c1482ff
 
 build:
   noarch: python
@@ -30,6 +30,7 @@ requirements:
     - pandas
     - openpyxl
     - pooch
+    - tqdm
     - verde >=1.8.0
     - xarray
     - harmonica >=0.6.0
@@ -45,6 +46,7 @@ requirements:
     - python-dotenv
     - nptyping
     - requests
+    - deprecation
 
 test:
   imports:
