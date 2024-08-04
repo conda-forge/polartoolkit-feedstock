@@ -47,6 +47,7 @@ requirements:
     - nptyping
     - requests
     - deprecation
+    - earthaccess
 
 test:
   imports:
