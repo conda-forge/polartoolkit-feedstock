@@ -44,7 +44,6 @@ requirements:
     - geopandas
     - zarr
     - python-dotenv
-    - nptyping
     - requests
     - deprecation
     - earthaccess
