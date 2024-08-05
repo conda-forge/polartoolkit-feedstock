@@ -1,5 +1,5 @@
 {% set name = "polartoolkit" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/polartoolkit-{{ version }}.tar.gz
-  sha256: 15d0bfed4e2281e400629fdd26b5cfd2dd672e45630525de3b5d7123cdddc739
+  sha256: d89898180a7aaf28d7891aed4999eb9fcab374f92dbdeebffb0bae8b8c8854d1
 
 build:
   noarch: python
@@ -41,10 +41,9 @@ requirements:
     - scipy
     - numpy
     - pygmt >=0.10.0
-    - geopandas
+    - geopandas <1.0
     - zarr
     - python-dotenv
-    - nptyping
     - requests
     - deprecation
     - earthaccess
