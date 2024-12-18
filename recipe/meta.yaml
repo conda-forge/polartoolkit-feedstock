@@ -36,8 +36,6 @@ requirements:
     - xarray
     - harmonica >=0.6.0
     - pyproj
-    - matplotlib-base
-    - pyogrio
     - rioxarray
     - scipy
     - numpy
