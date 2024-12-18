@@ -1,5 +1,5 @@
 {% set name = "polartoolkit" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 {% set python_min = python_min|default("3.9") %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/polartoolkit-{{ version }}.tar.gz
-  sha256: 2f7985cc667d432648ec22820af58f7bad066eb377fc280c642cbd860dc76dcb
+  sha256: 227bc4150c9b5469a5872d44e0bce28cf87752d8c6a9ab2e2bcb6454faefc647
 
 build:
   noarch: python
@@ -36,8 +36,6 @@ requirements:
     - xarray
     - harmonica >=0.6.0
     - pyproj
-    - matplotlib-base
-    - pyogrio
     - rioxarray
     - scipy
     - numpy
