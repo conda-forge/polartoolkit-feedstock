@@ -32,7 +32,7 @@ requirements:
     - openpyxl
     - pooch
     - tqdm
-    - verde >=1.8.0
+    - verde
     - xarray
     - harmonica >=0.6.0
     - pyproj
@@ -46,6 +46,7 @@ requirements:
     - requests
     - deprecation
     - earthaccess
+    - xrft
 
 test:
   imports:
