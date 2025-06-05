@@ -1,5 +1,5 @@
 {% set name = "polartoolkit" %}
-{% set version = "1.0.4" %}
+{% set version = "1.0.5" %}
 {% set python_min = python_min|default("3.9") %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/polartoolkit-{{ version }}.tar.gz
-  sha256: 8f87bf0d3bedce3e2983b72dee9ff4089502f1aa69faffd0b4adca064ae4308e
+  sha256: 4bdaf63075fc67d17a217ea26ee7fb69838a2461bb702d554937698a3cf78d55
 
 build:
   noarch: python
