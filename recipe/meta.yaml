@@ -1,6 +1,6 @@
 {% set name = "polartoolkit" %}
-{% set version = "1.0.6" %}
-{% set python_min = python_min|default("3.9") %}
+{% set version = "1.1.2" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -8,23 +8,18 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/polartoolkit-{{ version }}.tar.gz
-  sha256: 229110ba9528824523e7f373e2fc64d97af7ccaeb2d6abcdbd396c031fdb2e96
+  sha256: ae3b7cc30ce3476d6b13873213e3bd7e02781fc47b328621aa4987b28211bf72
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
-###
-###
-###
-# RESET BUILD NUMBER
-###
-###
-###
+
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=64
+    - hatchling
+    - hatch-vcs
     - pip
   run:
     - python >={{ python_min }}
@@ -42,7 +37,7 @@ requirements:
     - pygmt >=0.10.0
     - geopandas >=1.0
     - pyogrio
-    - zarr
+    - zarr >=3.0
     - python-dotenv
     - requests
     - deprecation
