@@ -23,22 +23,22 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - numpy>=1.25.0
-    - pandas>=2.0.0
-    - xarray>=2023.4.0
-    - scipy>=1.11.0
+    - numpy >=1.25.0
+    - pandas >=2.0.0
+    - xarray >=2023.4.0
+    - scipy >=1.11.0
     - verde
     - pooch
     - rioxarray
     - tqdm
-    - pygmt>=0.10.0
-    - harmonica>=0.6.0
+    - pygmt >=0.10.0
+    - harmonica >=0.6.0
     - deprecation
     - openpyxl
     - pyproj
-    - geopandas>=1.0 
+    - geopandas >=1.0 
     - pyogrio
-    - zarr>=3.0 
+    - zarr >=3.0 
     - python-dotenv
     - requests
     - earthaccess
