@@ -1,5 +1,5 @@
 {% set name = "polartoolkit" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/polartoolkit-{{ version }}.tar.gz
-  sha256: dcac7ca4aefbfa77d8c11c64dc76f7c93c79281bfc84e7ec76ede955dcb6bc15
+  sha256: bf3943083e25da476879bb1cf2445fb17a30b5e8a63abfcb55c05626d85c667b
 
 build:
   noarch: python
@@ -33,7 +33,7 @@ requirements:
     - pooch
     - rioxarray
     - tqdm
-    - pygmt >=0.10.0
+    - pygmt >=0.18.0
     - harmonica >=0.6.0
     - deprecation
     - openpyxl
@@ -45,6 +45,7 @@ requirements:
     - requests
     - earthaccess
     - xrft
+    - scooby
 test:
   imports:
     - polartoolkit
